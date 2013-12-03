@@ -1,0 +1,409 @@
+Mon Dec  2 20:41:29.969 [initandlisten] MongoDB starting : pid=5745 port=27017 dbpath=/data/rs1 64-bit host=Fengs-MacBook-Pro.local
+Mon Dec  2 20:41:29.970 [initandlisten] 
+Mon Dec  2 20:41:29.970 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon Dec  2 20:41:29.970 [initandlisten] db version v2.4.7
+Mon Dec  2 20:41:29.970 [initandlisten] git version: nogitversion
+Mon Dec  2 20:41:29.970 [initandlisten] build info: Darwin Fengs-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Mon Dec  2 20:41:29.970 [initandlisten] allocator: tcmalloc
+Mon Dec  2 20:41:29.970 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/data/rs1", fork: true, logappend: "true", logpath: "1.log", oplogSize: 64, port: 27017, replSet: "m101", smallfiles: true }
+Mon Dec  2 20:41:30.037 [initandlisten] exception in initAndListen: 10309 Unable to create/open lock file: /data/rs1/mongod.lock errno:13 Permission denied Is a mongod instance already running?, terminating
+Mon Dec  2 20:41:30.038 dbexit: 
+Mon Dec  2 20:41:30.038 [initandlisten] shutdown: going to close listening sockets...
+Mon Dec  2 20:41:30.038 [initandlisten] shutdown: going to flush diaglog...
+Mon Dec  2 20:41:30.038 [initandlisten] shutdown: going to close sockets...
+Mon Dec  2 20:41:30.039 [initandlisten] shutdown: waiting for fs preallocator...
+Mon Dec  2 20:41:30.039 [initandlisten] shutdown: lock for final commit...
+Mon Dec  2 20:41:30.039 [initandlisten] shutdown: final commit...
+Mon Dec  2 20:41:30.039 [initandlisten] shutdown: closing all files...
+Mon Dec  2 20:41:30.040 [initandlisten] closeAllFiles() finished
+Mon Dec  2 20:41:30.040 [initandlisten] shutdown: removing fs lock...
+Mon Dec  2 20:41:30.040 [initandlisten] couldn't remove fs lock errno:9 Bad file descriptor
+Mon Dec  2 20:41:30.040 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Dec  2 20:42:05.341 [initandlisten] MongoDB starting : pid=5753 port=27017 dbpath=/data/rs1 64-bit host=Fengs-MacBook-Pro.local
+Mon Dec  2 20:42:05.341 [initandlisten] 
+Mon Dec  2 20:42:05.341 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon Dec  2 20:42:05.341 [initandlisten] db version v2.4.7
+Mon Dec  2 20:42:05.342 [initandlisten] git version: nogitversion
+Mon Dec  2 20:42:05.342 [initandlisten] build info: Darwin Fengs-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Mon Dec  2 20:42:05.342 [initandlisten] allocator: tcmalloc
+Mon Dec  2 20:42:05.342 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/data/rs1", fork: true, logappend: "true", logpath: "1.log", oplogSize: 64, port: 27017, replSet: "m101", smallfiles: true }
+Mon Dec  2 20:42:05.343 [initandlisten] journal dir=/data/rs1/journal
+Mon Dec  2 20:42:05.343 [initandlisten] recover : no journal files present, no recovery needed
+Mon Dec  2 20:42:05.441 [FileAllocator] allocating new datafile /data/rs1/local.ns, filling with zeroes...
+Mon Dec  2 20:42:05.473 [FileAllocator] creating directory /data/rs1/_tmp
+Mon Dec  2 20:42:05.512 [FileAllocator] done allocating datafile /data/rs1/local.ns, size: 16MB,  took 0.038 secs
+Mon Dec  2 20:42:05.749 [FileAllocator] allocating new datafile /data/rs1/local.0, filling with zeroes...
+Mon Dec  2 20:42:05.781 [FileAllocator] done allocating datafile /data/rs1/local.0, size: 16MB,  took 0.031 secs
+Mon Dec  2 20:42:06.040 [initandlisten] command local.$cmd command: { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0  reslen:37 630ms
+Mon Dec  2 20:42:06.100 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Mon Dec  2 20:42:06.100 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Mon Dec  2 20:42:06.101 [websvr] ERROR:   addr already in use
+Mon Dec  2 20:42:06.101 [initandlisten] ERROR:   addr already in use
+Mon Dec  2 20:42:06.102 [initandlisten] now exiting
+Mon Dec  2 20:42:06.102 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:42:06.103 dbexit: 
+Mon Dec  2 20:42:06.103 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Mon Dec  2 20:42:06.103 [initandlisten] shutdown: going to close listening sockets...
+Mon Dec  2 20:42:06.104 [initandlisten] shutdown: going to flush diaglog...
+Mon Dec  2 20:42:06.104 [initandlisten] shutdown: going to close sockets...
+Mon Dec  2 20:42:06.104 [initandlisten] shutdown: waiting for fs preallocator...
+Mon Dec  2 20:42:06.104 [initandlisten] shutdown: lock for final commit...
+Mon Dec  2 20:42:06.104 [initandlisten] shutdown: final commit...
+Mon Dec  2 20:42:06.113 [initandlisten] shutdown: closing all files...
+Mon Dec  2 20:42:06.113 [initandlisten] closeAllFiles() finished
+Mon Dec  2 20:42:06.113 [initandlisten] journalCleanup...
+Mon Dec  2 20:42:06.128 [initandlisten] removeJournalFiles
+Mon Dec  2 20:42:06.129 [initandlisten] shutdown: removing fs lock...
+Mon Dec  2 20:42:06.129 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Dec  2 20:46:13.550 [initandlisten] MongoDB starting : pid=6172 port=27017 dbpath=/data/rs1 64-bit host=Fengs-MacBook-Pro.local
+Mon Dec  2 20:46:13.550 [initandlisten] 
+Mon Dec  2 20:46:13.550 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon Dec  2 20:46:13.551 [initandlisten] db version v2.4.7
+Mon Dec  2 20:46:13.551 [initandlisten] git version: nogitversion
+Mon Dec  2 20:46:13.551 [initandlisten] build info: Darwin Fengs-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Mon Dec  2 20:46:13.551 [initandlisten] allocator: tcmalloc
+Mon Dec  2 20:46:13.551 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/data/rs1", fork: true, logappend: "true", logpath: "1.log", oplogSize: 64, port: 27017, replSet: "m101", smallfiles: true }
+Mon Dec  2 20:46:13.552 [initandlisten] journal dir=/data/rs1/journal
+Mon Dec  2 20:46:13.552 [initandlisten] recover : no journal files present, no recovery needed
+Mon Dec  2 20:46:13.599 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Mon Dec  2 20:46:13.599 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Mon Dec  2 20:46:13.599 [initandlisten] ERROR:   addr already in use
+Mon Dec  2 20:46:13.599 [websvr] ERROR:   addr already in use
+Mon Dec  2 20:46:13.600 [initandlisten] now exiting
+Mon Dec  2 20:46:13.600 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:46:13.600 dbexit: 
+Mon Dec  2 20:46:13.601 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Mon Dec  2 20:46:13.601 [initandlisten] shutdown: going to close listening sockets...
+Mon Dec  2 20:46:13.601 [initandlisten] shutdown: going to flush diaglog...
+Mon Dec  2 20:46:13.601 [initandlisten] shutdown: going to close sockets...
+Mon Dec  2 20:46:13.601 [initandlisten] shutdown: waiting for fs preallocator...
+Mon Dec  2 20:46:13.601 [initandlisten] shutdown: lock for final commit...
+Mon Dec  2 20:46:13.601 [initandlisten] shutdown: final commit...
+Mon Dec  2 20:46:13.606 [initandlisten] shutdown: closing all files...
+Mon Dec  2 20:46:13.607 [initandlisten] closeAllFiles() finished
+Mon Dec  2 20:46:13.607 [initandlisten] journalCleanup...
+Mon Dec  2 20:46:13.607 [initandlisten] removeJournalFiles
+Mon Dec  2 20:46:13.607 [initandlisten] shutdown: removing fs lock...
+Mon Dec  2 20:46:13.607 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Dec  2 20:50:09.233 [initandlisten] MongoDB starting : pid=6214 port=27017 dbpath=/data/rs1 64-bit host=Fengs-MacBook-Pro.local
+Mon Dec  2 20:50:09.234 [initandlisten] 
+Mon Dec  2 20:50:09.234 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon Dec  2 20:50:09.234 [initandlisten] db version v2.4.7
+Mon Dec  2 20:50:09.234 [initandlisten] git version: nogitversion
+Mon Dec  2 20:50:09.234 [initandlisten] build info: Darwin Fengs-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Mon Dec  2 20:50:09.234 [initandlisten] allocator: tcmalloc
+Mon Dec  2 20:50:09.234 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/data/rs1", fork: true, logappend: "true", logpath: "1.log", oplogSize: 64, port: 27017, replSet: "m101", smallfiles: true }
+Mon Dec  2 20:50:09.235 [initandlisten] journal dir=/data/rs1/journal
+Mon Dec  2 20:50:09.235 [initandlisten] recover : no journal files present, no recovery needed
+Mon Dec  2 20:50:09.276 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Mon Dec  2 20:50:09.276 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Mon Dec  2 20:50:09.276 [initandlisten] ERROR:   addr already in use
+Mon Dec  2 20:50:09.277 [websvr] ERROR:   addr already in use
+Mon Dec  2 20:50:09.277 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:50:09.278 [initandlisten] now exiting
+Mon Dec  2 20:50:09.278 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Mon Dec  2 20:50:09.278 dbexit: 
+Mon Dec  2 20:50:09.278 [initandlisten] shutdown: going to close listening sockets...
+Mon Dec  2 20:50:09.278 [initandlisten] shutdown: going to flush diaglog...
+Mon Dec  2 20:50:09.278 [initandlisten] shutdown: going to close sockets...
+Mon Dec  2 20:50:09.278 [initandlisten] shutdown: waiting for fs preallocator...
+Mon Dec  2 20:50:09.278 [initandlisten] shutdown: lock for final commit...
+Mon Dec  2 20:50:09.278 [initandlisten] shutdown: final commit...
+Mon Dec  2 20:50:09.282 [initandlisten] shutdown: closing all files...
+Mon Dec  2 20:50:09.283 [initandlisten] closeAllFiles() finished
+Mon Dec  2 20:50:09.283 [initandlisten] journalCleanup...
+Mon Dec  2 20:50:09.283 [initandlisten] removeJournalFiles
+Mon Dec  2 20:50:09.283 [initandlisten] shutdown: removing fs lock...
+Mon Dec  2 20:50:09.283 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Dec  2 20:54:32.992 [initandlisten] MongoDB starting : pid=6244 port=27017 dbpath=/data/rs1 64-bit host=Fengs-MacBook-Pro.local
+Mon Dec  2 20:54:32.992 [initandlisten] 
+Mon Dec  2 20:54:32.992 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon Dec  2 20:54:32.992 [initandlisten] db version v2.4.7
+Mon Dec  2 20:54:32.992 [initandlisten] git version: nogitversion
+Mon Dec  2 20:54:32.992 [initandlisten] build info: Darwin Fengs-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Mon Dec  2 20:54:32.992 [initandlisten] allocator: tcmalloc
+Mon Dec  2 20:54:32.992 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/data/rs1", fork: true, logappend: "true", logpath: "1.log", oplogSize: 64, port: 27017, replSet: "m101", smallfiles: true }
+Mon Dec  2 20:54:32.993 [initandlisten] journal dir=/data/rs1/journal
+Mon Dec  2 20:54:32.994 [initandlisten] recover : no journal files present, no recovery needed
+Mon Dec  2 20:54:33.027 [websvr] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:28017
+Mon Dec  2 20:54:33.027 [initandlisten] ERROR: listen(): bind() failed errno:48 Address already in use for socket: 127.0.0.1:27017
+Mon Dec  2 20:54:33.027 [websvr] ERROR:   addr already in use
+Mon Dec  2 20:54:33.027 [initandlisten] ERROR:   addr already in use
+Mon Dec  2 20:54:33.028 [initandlisten] now exiting
+Mon Dec  2 20:54:33.028 dbexit: 
+Mon Dec  2 20:54:33.028 [initandlisten] shutdown: going to close listening sockets...
+Mon Dec  2 20:54:33.028 [initandlisten] shutdown: going to flush diaglog...
+Mon Dec  2 20:54:33.028 [initandlisten] shutdown: going to close sockets...
+Mon Dec  2 20:54:33.028 [initandlisten] shutdown: waiting for fs preallocator...
+Mon Dec  2 20:54:33.028 [initandlisten] shutdown: lock for final commit...
+Mon Dec  2 20:54:33.028 [initandlisten] shutdown: final commit...
+Mon Dec  2 20:54:33.033 [initandlisten] shutdown: closing all files...
+Mon Dec  2 20:54:33.033 [initandlisten] closeAllFiles() finished
+Mon Dec  2 20:54:33.033 [initandlisten] journalCleanup...
+Mon Dec  2 20:54:33.033 [initandlisten] removeJournalFiles
+Mon Dec  2 20:54:33.034 [initandlisten] shutdown: removing fs lock...
+Mon Dec  2 20:54:33.034 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Mon Dec  2 20:56:20.665 [initandlisten] MongoDB starting : pid=6257 port=27017 dbpath=/data/rs1 64-bit host=Fengs-MacBook-Pro.local
+Mon Dec  2 20:56:20.665 [initandlisten] 
+Mon Dec  2 20:56:20.665 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon Dec  2 20:56:20.665 [initandlisten] db version v2.4.7
+Mon Dec  2 20:56:20.665 [initandlisten] git version: nogitversion
+Mon Dec  2 20:56:20.665 [initandlisten] build info: Darwin Fengs-MacBook-Pro.local 13.0.0 Darwin Kernel Version 13.0.0: Thu Sep 19 22:22:27 PDT 2013; root:xnu-2422.1.72~6/RELEASE_X86_64 x86_64 BOOST_LIB_VERSION=1_49
+Mon Dec  2 20:56:20.665 [initandlisten] allocator: tcmalloc
+Mon Dec  2 20:56:20.665 [initandlisten] options: { bind_ip: "127.0.0.1", config: "/usr/local/etc/mongod.conf", dbpath: "/data/rs1", fork: true, logappend: "true", logpath: "1.log", oplogSize: 64, port: 27017, replSet: "m101", smallfiles: true }
+Mon Dec  2 20:56:20.666 [initandlisten] journal dir=/data/rs1/journal
+Mon Dec  2 20:56:20.666 [initandlisten] recover : no journal files present, no recovery needed
+Mon Dec  2 20:56:20.705 [websvr] admin web console waiting for connections on port 28017
+Mon Dec  2 20:56:20.706 [initandlisten] waiting for connections on port 27017
+Mon Dec  2 20:56:20.706 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:56:20.707 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Mon Dec  2 20:56:30.707 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Mon Dec  2 20:56:32.712 [initandlisten] connection accepted from 127.0.0.1:64400 #1 (1 connection now open)
+Mon Dec  2 20:56:32.960 [conn1] replSet replSetInitiate admin command received from client
+Mon Dec  2 20:56:32.961 [conn1] replSet replSetInitiate config object parses ok, 3 members specified
+Mon Dec  2 20:56:32.965 [conn1] replSet replSetInitiate all members seem up
+Mon Dec  2 20:56:32.965 [conn1] ******
+Mon Dec  2 20:56:32.965 [conn1] creating replication oplog of size: 64MB...
+Mon Dec  2 20:56:32.966 [FileAllocator] allocating new datafile /data/rs1/local.1, filling with zeroes...
+Mon Dec  2 20:56:32.966 [FileAllocator] creating directory /data/rs1/_tmp
+Mon Dec  2 20:56:35.252 [FileAllocator] done allocating datafile /data/rs1/local.1, size: 128MB,  took 2.285 secs
+Mon Dec  2 20:56:35.514 [conn1] ******
+Mon Dec  2 20:56:35.514 [conn1] replSet info saving a newer config version to local.system.replset
+Mon Dec  2 20:56:35.606 [conn1] replSet saveConfigLocally done
+Mon Dec  2 20:56:35.606 [conn1] replSet replSetInitiate config now saved locally.  Should come online in about a minute.
+Mon Dec  2 20:56:35.607 [conn1] command admin.$cmd command: { replSetInitiate: { _id: "m101", members: [ { _id: 0.0, host: "localhost:27017" }, { _id: 1.0, host: "localhost:27018" }, { _id: 2.0, host: "localhost:27019" } ] } } ntoreturn:1 keyUpdates:0 locks(micros) W:2642308 reslen:112 2646ms
+Mon Dec  2 20:56:40.762 [rsStart] replSet I am localhost:27017
+Mon Dec  2 20:56:40.763 [rsStart] replSet STARTUP2
+Mon Dec  2 20:56:41.767 [rsSync] replSet SECONDARY
+Mon Dec  2 20:56:42.788 [rsHealthPoll] replSet member localhost:27019 is up
+Mon Dec  2 20:56:42.788 [rsHealthPoll] replSet member localhost:27018 is up
+Mon Dec  2 20:56:42.789 [rsMgr] replSet not electing self, not all members up and we have been up less than 5 minutes
+Mon Dec  2 20:56:42.790 [rsMgr] replSet not electing self, not all members up and we have been up less than 5 minutes
+Mon Dec  2 20:56:48.794 [rsMgr] replSet not electing self, not all members up and we have been up less than 5 minutes
+Mon Dec  2 20:56:50.905 [initandlisten] connection accepted from 127.0.0.1:64403 #2 (2 connections now open)
+Mon Dec  2 20:56:52.795 [rsHealthPoll] replset info localhost:27019 thinks that we are down
+Mon Dec  2 20:56:52.795 [rsHealthPoll] replSet member localhost:27019 is now in state STARTUP2
+Mon Dec  2 20:56:52.796 [rsMgr] not electing self, localhost:27019 would veto with 'I don't think localhost:27017 is electable'
+Mon Dec  2 20:56:55.542 [initandlisten] connection accepted from 127.0.0.1:64405 #3 (3 connections now open)
+Mon Dec  2 20:56:56.798 [rsHealthPoll] replset info localhost:27018 thinks that we are down
+Mon Dec  2 20:56:56.798 [rsHealthPoll] replSet member localhost:27018 is now in state STARTUP2
+Mon Dec  2 20:56:56.799 [rsMgr] not electing self, localhost:27018 would veto with 'I don't think localhost:27017 is electable'
+Mon Dec  2 20:56:57.458 [initandlisten] connection accepted from 127.0.0.1:64408 #4 (4 connections now open)
+Mon Dec  2 20:56:57.469 [conn4] end connection 127.0.0.1:64408 (3 connections now open)
+Mon Dec  2 20:56:57.473 [initandlisten] connection accepted from 127.0.0.1:64409 #5 (4 connections now open)
+Mon Dec  2 20:56:57.474 [initandlisten] connection accepted from 127.0.0.1:64410 #6 (5 connections now open)
+Mon Dec  2 20:56:57.474 [initandlisten] connection accepted from 127.0.0.1:64411 #7 (6 connections now open)
+Mon Dec  2 20:56:57.475 [initandlisten] connection accepted from 127.0.0.1:64412 #8 (7 connections now open)
+Mon Dec  2 20:56:57.475 [initandlisten] connection accepted from 127.0.0.1:64413 #9 (8 connections now open)
+Mon Dec  2 20:56:57.489 [conn8] end connection 127.0.0.1:64412 (7 connections now open)
+Mon Dec  2 20:56:57.490 [conn7] end connection 127.0.0.1:64411 (7 connections now open)
+Mon Dec  2 20:56:57.489 [conn9] end connection 127.0.0.1:64413 (7 connections now open)
+Mon Dec  2 20:56:57.490 [conn6] end connection 127.0.0.1:64410 (7 connections now open)
+Mon Dec  2 20:56:57.490 [conn5] end connection 127.0.0.1:64409 (7 connections now open)
+Mon Dec  2 20:57:02.801 [rsMgr] replSet info electSelf 0
+Mon Dec  2 20:57:03.788 [rsMgr] replSet PRIMARY
+Mon Dec  2 20:57:04.802 [rsHealthPoll] replSet member localhost:27018 is now in state RECOVERING
+Mon Dec  2 20:57:04.802 [rsHealthPoll] replSet member localhost:27019 is now in state RECOVERING
+Mon Dec  2 20:57:06.926 [conn2] end connection 127.0.0.1:64403 (2 connections now open)
+Mon Dec  2 20:57:06.926 [initandlisten] connection accepted from 127.0.0.1:64424 #10 (4 connections now open)
+Mon Dec  2 20:57:08.905 [initandlisten] connection accepted from 127.0.0.1:64425 #11 (4 connections now open)
+Mon Dec  2 20:57:08.979 [conn11] end connection 127.0.0.1:64425 (3 connections now open)
+Mon Dec  2 20:57:09.935 [initandlisten] connection accepted from 127.0.0.1:64426 #12 (4 connections now open)
+Mon Dec  2 20:57:09.980 [initandlisten] connection accepted from 127.0.0.1:64427 #13 (5 connections now open)
+Mon Dec  2 20:57:11.024 [slaveTracking] build index local.slaves { _id: 1 }
+Mon Dec  2 20:57:11.025 [slaveTracking] build index done.  scanned 0 total records. 0.001 secs
+Mon Dec  2 20:57:11.555 [conn3] end connection 127.0.0.1:64405 (4 connections now open)
+Mon Dec  2 20:57:11.556 [initandlisten] connection accepted from 127.0.0.1:64429 #14 (6 connections now open)
+Mon Dec  2 20:57:12.808 [rsHealthPoll] replSet member localhost:27019 is now in state SECONDARY
+Mon Dec  2 20:57:13.284 [initandlisten] connection accepted from 127.0.0.1:64430 #15 (6 connections now open)
+Mon Dec  2 20:57:13.322 [conn15] end connection 127.0.0.1:64430 (5 connections now open)
+Mon Dec  2 20:57:13.566 [initandlisten] connection accepted from 127.0.0.1:64431 #16 (6 connections now open)
+Mon Dec  2 20:57:14.324 [initandlisten] connection accepted from 127.0.0.1:64432 #17 (7 connections now open)
+Mon Dec  2 20:57:16.811 [rsHealthPoll] replSet member localhost:27018 is now in state SECONDARY
+Mon Dec  2 20:57:36.947 [conn10] end connection 127.0.0.1:64424 (6 connections now open)
+Mon Dec  2 20:57:36.947 [initandlisten] connection accepted from 127.0.0.1:64436 #18 (8 connections now open)
+Mon Dec  2 20:57:41.574 [conn14] end connection 127.0.0.1:64429 (6 connections now open)
+Mon Dec  2 20:57:41.574 [initandlisten] connection accepted from 127.0.0.1:64438 #19 (8 connections now open)
+Mon Dec  2 20:57:55.909 [initandlisten] connection accepted from 127.0.0.1:64441 #20 (8 connections now open)
+Mon Dec  2 20:57:55.919 [conn20] end connection 127.0.0.1:64441 (7 connections now open)
+Mon Dec  2 20:57:55.923 [initandlisten] connection accepted from 127.0.0.1:64442 #21 (8 connections now open)
+Mon Dec  2 20:57:55.924 [initandlisten] connection accepted from 127.0.0.1:64443 #22 (9 connections now open)
+Mon Dec  2 20:57:55.925 [initandlisten] connection accepted from 127.0.0.1:64444 #23 (10 connections now open)
+Mon Dec  2 20:57:55.925 [initandlisten] connection accepted from 127.0.0.1:64445 #24 (11 connections now open)
+Mon Dec  2 20:57:55.926 [initandlisten] connection accepted from 127.0.0.1:64446 #25 (12 connections now open)
+Mon Dec  2 20:57:56.067 [initandlisten] connection accepted from 127.0.0.1:64457 #26 (13 connections now open)
+Mon Dec  2 20:57:56.067 [initandlisten] connection accepted from 127.0.0.1:64458 #27 (14 connections now open)
+Mon Dec  2 20:57:59.315 [initandlisten] connection accepted from 127.0.0.1:64462 #28 (15 connections now open)
+Mon Dec  2 20:57:59.326 [conn28] end connection 127.0.0.1:64462 (14 connections now open)
+Mon Dec  2 20:57:59.330 [initandlisten] connection accepted from 127.0.0.1:64463 #29 (15 connections now open)
+Mon Dec  2 20:57:59.331 [initandlisten] connection accepted from 127.0.0.1:64464 #30 (16 connections now open)
+Mon Dec  2 20:57:59.332 [initandlisten] connection accepted from 127.0.0.1:64465 #31 (17 connections now open)
+Mon Dec  2 20:57:59.332 [initandlisten] connection accepted from 127.0.0.1:64466 #32 (18 connections now open)
+Mon Dec  2 20:57:59.333 [initandlisten] connection accepted from 127.0.0.1:64467 #33 (19 connections now open)
+Mon Dec  2 20:57:59.349 [initandlisten] connection accepted from 127.0.0.1:64478 #34 (20 connections now open)
+Mon Dec  2 20:57:59.349 [initandlisten] connection accepted from 127.0.0.1:64479 #35 (21 connections now open)
+Mon Dec  2 20:57:59.354 [conn29] end connection 127.0.0.1:64463 (20 connections now open)
+Mon Dec  2 20:57:59.354 [conn30] end connection 127.0.0.1:64464 (20 connections now open)
+Mon Dec  2 20:57:59.354 [conn33] end connection 127.0.0.1:64467 (20 connections now open)
+Mon Dec  2 20:57:59.354 [conn32] end connection 127.0.0.1:64466 (20 connections now open)
+Mon Dec  2 20:57:59.354 [conn31] end connection 127.0.0.1:64465 (20 connections now open)
+Mon Dec  2 20:57:59.355 [conn34] end connection 127.0.0.1:64478 (15 connections now open)
+Mon Dec  2 20:57:59.356 [conn35] end connection 127.0.0.1:64479 (14 connections now open)
+Mon Dec  2 20:58:06.966 [conn18] end connection 127.0.0.1:64436 (13 connections now open)
+Mon Dec  2 20:58:06.966 [initandlisten] connection accepted from 127.0.0.1:64484 #36 (14 connections now open)
+Mon Dec  2 20:58:11.588 [conn19] end connection 127.0.0.1:64438 (13 connections now open)
+Mon Dec  2 20:58:11.589 [initandlisten] connection accepted from 127.0.0.1:64486 #37 (14 connections now open)
+Mon Dec  2 20:58:36.984 [conn36] end connection 127.0.0.1:64484 (13 connections now open)
+Mon Dec  2 20:58:36.984 [initandlisten] connection accepted from 127.0.0.1:64500 #38 (15 connections now open)
+Mon Dec  2 20:58:41.604 [conn37] end connection 127.0.0.1:64486 (13 connections now open)
+Mon Dec  2 20:58:41.604 [initandlisten] connection accepted from 127.0.0.1:64502 #39 (15 connections now open)
+Mon Dec  2 20:59:06.998 [conn38] end connection 127.0.0.1:64500 (13 connections now open)
+Mon Dec  2 20:59:06.998 [initandlisten] connection accepted from 127.0.0.1:64591 #40 (15 connections now open)
+Mon Dec  2 20:59:11.620 [conn39] end connection 127.0.0.1:64502 (13 connections now open)
+Mon Dec  2 20:59:11.620 [initandlisten] connection accepted from 127.0.0.1:64593 #41 (15 connections now open)
+Mon Dec  2 20:59:37.012 [conn40] end connection 127.0.0.1:64591 (13 connections now open)
+Mon Dec  2 20:59:37.012 [initandlisten] connection accepted from 127.0.0.1:64601 #42 (15 connections now open)
+Mon Dec  2 20:59:41.642 [conn41] end connection 127.0.0.1:64593 (13 connections now open)
+Mon Dec  2 20:59:41.643 [initandlisten] connection accepted from 127.0.0.1:64603 #43 (14 connections now open)
+Mon Dec  2 21:00:07.025 [conn42] end connection 127.0.0.1:64601 (13 connections now open)
+Mon Dec  2 21:00:07.026 [initandlisten] connection accepted from 127.0.0.1:64613 #44 (15 connections now open)
+Mon Dec  2 21:00:07.856 [conn1] end connection 127.0.0.1:64400 (13 connections now open)
+Mon Dec  2 21:00:09.763 [initandlisten] connection accepted from 127.0.0.1:64614 #45 (14 connections now open)
+Mon Dec  2 21:00:11.658 [conn43] end connection 127.0.0.1:64603 (13 connections now open)
+Mon Dec  2 21:00:11.659 [initandlisten] connection accepted from 127.0.0.1:64616 #46 (15 connections now open)
+Mon Dec  2 21:00:37.049 [conn44] end connection 127.0.0.1:64613 (13 connections now open)
+Mon Dec  2 21:00:37.049 [initandlisten] connection accepted from 127.0.0.1:64620 #47 (15 connections now open)
+Mon Dec  2 21:00:41.679 [conn46] end connection 127.0.0.1:64616 (13 connections now open)
+Mon Dec  2 21:00:41.680 [initandlisten] connection accepted from 127.0.0.1:64622 #48 (15 connections now open)
+Mon Dec  2 21:01:02.390 [conn45] end connection 127.0.0.1:64614 (13 connections now open)
+Mon Dec  2 21:01:07.067 [conn47] end connection 127.0.0.1:64620 (12 connections now open)
+Mon Dec  2 21:01:07.067 [initandlisten] connection accepted from 127.0.0.1:64626 #49 (13 connections now open)
+Mon Dec  2 21:01:11.701 [conn48] end connection 127.0.0.1:64622 (12 connections now open)
+Mon Dec  2 21:01:11.701 [initandlisten] connection accepted from 127.0.0.1:64628 #50 (13 connections now open)
+Mon Dec  2 21:01:37.088 [conn49] end connection 127.0.0.1:64626 (12 connections now open)
+Mon Dec  2 21:01:37.088 [initandlisten] connection accepted from 127.0.0.1:64636 #51 (14 connections now open)
+Mon Dec  2 21:01:41.723 [conn50] end connection 127.0.0.1:64628 (12 connections now open)
+Mon Dec  2 21:01:41.723 [initandlisten] connection accepted from 127.0.0.1:64638 #52 (14 connections now open)
+Mon Dec  2 21:02:05.609 [FileAllocator] allocating new datafile /data/rs1/blog.ns, filling with zeroes...
+Mon Dec  2 21:02:05.634 [FileAllocator] done allocating datafile /data/rs1/blog.ns, size: 16MB,  took 0.024 secs
+Mon Dec  2 21:02:05.853 [FileAllocator] allocating new datafile /data/rs1/blog.0, filling with zeroes...
+Mon Dec  2 21:02:05.888 [FileAllocator] done allocating datafile /data/rs1/blog.0, size: 16MB,  took 0.034 secs
+Mon Dec  2 21:02:06.114 [FileAllocator] allocating new datafile /data/rs1/blog.1, filling with zeroes...
+Mon Dec  2 21:02:06.116 [conn23] build index blog.users { _id: 1 }
+Mon Dec  2 21:02:06.117 [conn23] build index done.  scanned 0 total records. 0 secs
+Mon Dec  2 21:02:06.117 [conn23] insert blog.users ninserted:1 keyUpdates:0 locks(micros) w:508444 508ms
+Mon Dec  2 21:02:06.120 [conn24] build index blog.sessions { _id: 1 }
+Mon Dec  2 21:02:06.121 [conn24] build index done.  scanned 0 total records. 0 secs
+Mon Dec  2 21:02:06.603 [FileAllocator] done allocating datafile /data/rs1/blog.1, size: 32MB,  took 0.488 secs
+Mon Dec  2 21:02:07.106 [conn51] end connection 127.0.0.1:64636 (12 connections now open)
+Mon Dec  2 21:02:07.106 [initandlisten] connection accepted from 127.0.0.1:64646 #53 (14 connections now open)
+Mon Dec  2 21:02:11.744 [conn52] end connection 127.0.0.1:64638 (12 connections now open)
+Mon Dec  2 21:02:11.745 [initandlisten] connection accepted from 127.0.0.1:64648 #54 (13 connections now open)
+Mon Dec  2 21:02:27.898 [conn25] build index blog.posts { _id: 1 }
+Mon Dec  2 21:02:27.899 [conn25] build index done.  scanned 0 total records. 0 secs
+Mon Dec  2 21:02:37.125 [conn53] end connection 127.0.0.1:64646 (12 connections now open)
+Mon Dec  2 21:02:37.125 [initandlisten] connection accepted from 127.0.0.1:64652 #55 (14 connections now open)
+Mon Dec  2 21:02:41.763 [conn54] end connection 127.0.0.1:64648 (12 connections now open)
+Mon Dec  2 21:02:41.764 [initandlisten] connection accepted from 127.0.0.1:64654 #56 (14 connections now open)
+Mon Dec  2 21:03:02.691 [initandlisten] connection accepted from 127.0.0.1:64658 #57 (14 connections now open)
+Mon Dec  2 21:03:07.145 [conn55] end connection 127.0.0.1:64652 (13 connections now open)
+Mon Dec  2 21:03:07.146 [initandlisten] connection accepted from 127.0.0.1:64659 #58 (15 connections now open)
+Mon Dec  2 21:03:11.782 [conn56] end connection 127.0.0.1:64654 (13 connections now open)
+Mon Dec  2 21:03:11.782 [initandlisten] connection accepted from 127.0.0.1:64661 #59 (15 connections now open)
+Mon Dec  2 21:03:17.809 [conn57] end connection 127.0.0.1:64658 (13 connections now open)
+Mon Dec  2 21:03:37.160 [conn58] end connection 127.0.0.1:64659 (12 connections now open)
+Mon Dec  2 21:03:37.161 [initandlisten] connection accepted from 127.0.0.1:64672 #60 (13 connections now open)
+Mon Dec  2 21:03:41.801 [conn59] end connection 127.0.0.1:64661 (12 connections now open)
+Mon Dec  2 21:03:41.801 [initandlisten] connection accepted from 127.0.0.1:64674 #61 (14 connections now open)
+Mon Dec  2 21:04:07.180 [conn60] end connection 127.0.0.1:64672 (12 connections now open)
+Mon Dec  2 21:04:07.180 [initandlisten] connection accepted from 127.0.0.1:64682 #62 (14 connections now open)
+Mon Dec  2 21:04:11.822 [conn61] end connection 127.0.0.1:64674 (12 connections now open)
+Mon Dec  2 21:04:11.822 [initandlisten] connection accepted from 127.0.0.1:64684 #63 (14 connections now open)
+Mon Dec  2 21:04:37.195 [conn62] end connection 127.0.0.1:64682 (12 connections now open)
+Mon Dec  2 21:04:37.196 [initandlisten] connection accepted from 127.0.0.1:64714 #64 (13 connections now open)
+Mon Dec  2 21:04:41.840 [conn63] end connection 127.0.0.1:64684 (12 connections now open)
+Mon Dec  2 21:04:41.840 [initandlisten] connection accepted from 127.0.0.1:64731 #65 (14 connections now open)
+Mon Dec  2 21:05:07.213 [conn64] end connection 127.0.0.1:64714 (12 connections now open)
+Mon Dec  2 21:05:07.214 [initandlisten] connection accepted from 127.0.0.1:64745 #66 (14 connections now open)
+Mon Dec  2 21:05:11.859 [conn65] end connection 127.0.0.1:64731 (12 connections now open)
+Mon Dec  2 21:05:11.859 [initandlisten] connection accepted from 127.0.0.1:64747 #67 (13 connections now open)
+Mon Dec  2 21:05:37.235 [conn66] end connection 127.0.0.1:64745 (12 connections now open)
+Mon Dec  2 21:05:37.235 [initandlisten] connection accepted from 127.0.0.1:64751 #68 (14 connections now open)
+Mon Dec  2 21:05:41.881 [conn67] end connection 127.0.0.1:64747 (12 connections now open)
+Mon Dec  2 21:05:41.881 [initandlisten] connection accepted from 127.0.0.1:64753 #69 (14 connections now open)
+Mon Dec  2 21:06:07.254 [conn68] end connection 127.0.0.1:64751 (12 connections now open)
+Mon Dec  2 21:06:07.255 [initandlisten] connection accepted from 127.0.0.1:64757 #70 (14 connections now open)
+Mon Dec  2 21:06:11.899 [conn69] end connection 127.0.0.1:64753 (12 connections now open)
+Mon Dec  2 21:06:11.899 [initandlisten] connection accepted from 127.0.0.1:64759 #71 (14 connections now open)
+Mon Dec  2 21:06:37.271 [conn70] end connection 127.0.0.1:64757 (12 connections now open)
+Mon Dec  2 21:06:37.271 [initandlisten] connection accepted from 127.0.0.1:64793 #72 (14 connections now open)
+Mon Dec  2 21:06:41.916 [conn71] end connection 127.0.0.1:64759 (12 connections now open)
+Mon Dec  2 21:06:41.916 [initandlisten] connection accepted from 127.0.0.1:64795 #73 (14 connections now open)
+Mon Dec  2 21:07:07.289 [conn72] end connection 127.0.0.1:64793 (12 connections now open)
+Mon Dec  2 21:07:07.289 [initandlisten] connection accepted from 127.0.0.1:64815 #74 (14 connections now open)
+Mon Dec  2 21:07:11.935 [conn73] end connection 127.0.0.1:64795 (12 connections now open)
+Mon Dec  2 21:07:11.936 [initandlisten] connection accepted from 127.0.0.1:64821 #75 (14 connections now open)
+Mon Dec  2 21:07:37.310 [conn74] end connection 127.0.0.1:64815 (12 connections now open)
+Mon Dec  2 21:07:37.310 [initandlisten] connection accepted from 127.0.0.1:64825 #76 (14 connections now open)
+Mon Dec  2 21:07:41.957 [conn75] end connection 127.0.0.1:64821 (12 connections now open)
+Mon Dec  2 21:07:41.957 [initandlisten] connection accepted from 127.0.0.1:64832 #77 (14 connections now open)
+Mon Dec  2 21:08:07.325 [conn76] end connection 127.0.0.1:64825 (12 connections now open)
+Mon Dec  2 21:08:07.325 [initandlisten] connection accepted from 127.0.0.1:64854 #78 (14 connections now open)
+Mon Dec  2 21:08:11.979 [conn77] end connection 127.0.0.1:64832 (12 connections now open)
+Mon Dec  2 21:08:11.979 [initandlisten] connection accepted from 127.0.0.1:64857 #79 (14 connections now open)
+Mon Dec  2 21:08:37.343 [conn78] end connection 127.0.0.1:64854 (12 connections now open)
+Mon Dec  2 21:08:37.343 [initandlisten] connection accepted from 127.0.0.1:64862 #80 (14 connections now open)
+Mon Dec  2 21:08:41.994 [conn79] end connection 127.0.0.1:64857 (12 connections now open)
+Mon Dec  2 21:08:41.995 [initandlisten] connection accepted from 127.0.0.1:64864 #81 (13 connections now open)
+Mon Dec  2 21:09:07.359 [conn80] end connection 127.0.0.1:64862 (12 connections now open)
+Mon Dec  2 21:09:07.360 [initandlisten] connection accepted from 127.0.0.1:64870 #82 (13 connections now open)
+Mon Dec  2 21:09:12.009 [conn81] end connection 127.0.0.1:64864 (12 connections now open)
+Mon Dec  2 21:09:12.009 [initandlisten] connection accepted from 127.0.0.1:64872 #83 (14 connections now open)
+Mon Dec  2 21:09:15.537 [conn26] end connection 127.0.0.1:64457 (12 connections now open)
+Mon Dec  2 21:09:15.537 [conn21] end connection 127.0.0.1:64442 (12 connections now open)
+Mon Dec  2 21:09:15.537 [conn27] end connection 127.0.0.1:64458 (12 connections now open)
+Mon Dec  2 21:09:15.537 [conn24] end connection 127.0.0.1:64445 (12 connections now open)
+Mon Dec  2 21:09:15.537 [conn22] end connection 127.0.0.1:64443 (12 connections now open)
+Mon Dec  2 21:09:15.537 [conn25] end connection 127.0.0.1:64446 (12 connections now open)
+Mon Dec  2 21:09:15.537 [conn23] end connection 127.0.0.1:64444 (12 connections now open)
+Mon Dec  2 21:09:37.380 [conn82] end connection 127.0.0.1:64870 (5 connections now open)
+Mon Dec  2 21:09:37.380 [initandlisten] connection accepted from 127.0.0.1:64876 #84 (6 connections now open)
+Mon Dec  2 21:09:42.026 [conn83] end connection 127.0.0.1:64872 (5 connections now open)
+Mon Dec  2 21:09:42.026 [initandlisten] connection accepted from 127.0.0.1:64890 #85 (7 connections now open)
+Mon Dec  2 21:10:07.397 [conn84] end connection 127.0.0.1:64876 (5 connections now open)
+Mon Dec  2 21:10:07.397 [initandlisten] connection accepted from 127.0.0.1:64929 #86 (7 connections now open)
+Mon Dec  2 21:10:12.047 [conn85] end connection 127.0.0.1:64890 (5 connections now open)
+Mon Dec  2 21:10:12.047 [initandlisten] connection accepted from 127.0.0.1:64931 #87 (7 connections now open)
+Mon Dec  2 21:10:37.416 [conn86] end connection 127.0.0.1:64929 (5 connections now open)
+Mon Dec  2 21:10:37.416 [initandlisten] connection accepted from 127.0.0.1:64941 #88 (6 connections now open)
+Mon Dec  2 21:10:42.067 [conn87] end connection 127.0.0.1:64931 (5 connections now open)
+Mon Dec  2 21:10:42.067 [initandlisten] connection accepted from 127.0.0.1:64943 #89 (6 connections now open)
+Mon Dec  2 21:11:07.429 [conn88] end connection 127.0.0.1:64941 (5 connections now open)
+Mon Dec  2 21:11:07.429 [initandlisten] connection accepted from 127.0.0.1:65074 #90 (6 connections now open)
+Mon Dec  2 21:11:12.082 [conn89] end connection 127.0.0.1:64943 (5 connections now open)
+Mon Dec  2 21:11:12.082 [initandlisten] connection accepted from 127.0.0.1:65103 #91 (7 connections now open)
