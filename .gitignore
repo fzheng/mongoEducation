@@ -1,4 +1,9 @@
 .idea
 .DS_Store
+.DS_Store?
+._*
+Thumbs.db
+.Trashes
 node_modules
 .project
+*.log
