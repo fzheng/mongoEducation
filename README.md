@@ -2,4 +2,4 @@ mongodb education
 ================
 https://education.mongodb.com
 
-version number 1.1.9
+version number 1.2.0
